@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.example.ISTYRACHMIWARDHANI_1202154299_Modul1.studycase.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="Makan Malam"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@id/textView"
+        android:layout_alignStart="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="dengan Milea"
+        android:textSize="18sp"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/nasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="57dp"
+        android:height="50dp"
+        android:defaultFocusHighlightEnabled="false"
+        android:editable="true"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="textPersonName"
+        android:text="Nasi Uduk" />
+
+    <EditText
+        android:id="@+id/jumlah"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nasi"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/eatbus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignLeft="@id/jumlah"
+        android:layout_below="@+id/jumlah"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="39dp"
+        android:background="#d6212e"
+        android:text="@string/eatbus"
+        android:textColor="@android:color/white"
+        android:onClick="launchSecondActivity"/>
+
+    <Button
+        android:id="@+id/abnormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eatbus"
+        android:layout_alignBottom="@+id/eatbus"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="26dp"
+        android:layout_weight="1"
+        android:background="#31d6d6"
+        android:text="@string/abnormal"
+        android:textColor="@android:color/white"
+        android:onClick="launchSecondActivity"/>
+
+</RelativeLayout>

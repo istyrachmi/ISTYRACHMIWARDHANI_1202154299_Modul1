@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Study Case</string>
+    <string name="abnormal">ABNORMAL</string>
+    <string name="eatbus">EATBUS</string>
+    <string name="nasi_uduk">Nasi Uduk</string>
+    <string name="dua">2</string>
+</resources>
