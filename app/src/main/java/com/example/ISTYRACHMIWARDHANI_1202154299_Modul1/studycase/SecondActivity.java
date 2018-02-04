@@ -6,7 +6,8 @@ import android.content.Intent;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.ISTYRACHMIWARDHANI_1202154299_Modul1.ISTYRACHMIWARDHANI_1202154299_Modul1;
+import com.example.ISTYRACHMIWARDHANI_1202154299_Modul1.ISTYRACHMIWARDHANI_1202154299_Modul1.R;
+
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -14,7 +15,7 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(ISTYRACHMIWARDHANI_1202154299_Modul1.R.layout.activity_second);
+        setContentView(R.layout.activity_second);
 
         Intent intent=getIntent();
         String HasilTempat =intent.getStringExtra("tempat");
@@ -24,25 +25,25 @@ public class SecondActivity extends AppCompatActivity {
 
         int Total= Integer.valueOf(Harga)* Integer.valueOf(Porsi);
 
-        tempat =(TextView)findViewById(ISTYRACHMIWARDHANI_1202154299_Modul1.R.id.rumahmakan);
+        tempat =(TextView)findViewById(R.id.textView4);
         tempat.setText(HasilTempat);
 
-        menumakanan =(TextView)findViewById(ISTYRACHMIWARDHANI_1202154299_Modul1.R.id.menum);
+        menumakanan =(TextView)findViewById(R.id.textView6);
         menumakanan.setText(Menu);
 
-        porsipesanan =(TextView)findViewById(ISTYRACHMIWARDHANI_1202154299_Modul1.R.id.porsi);
+        porsipesanan =(TextView)findViewById(R.id.textView9);
         porsipesanan.setText(Porsi);
 
-        harga=(TextView)findViewById(ISTYRACHMIWARDHANI_1202154299_Modul1.R.id.hargah);
+        harga=(TextView)findViewById(R.id.textView11);
         harga.setText(String.valueOf(Total));
 
         if (Total > 65000) {
-            Toast peringatan =Toast.makeText(this, "Jangan disini makan",Toast.LENGTH_LONG);
+            Toast peringatan =Toast.makeText(this, "Jangan disini makan malamnya, uang kamu tidak cukup",Toast.LENGTH_LONG);
             peringatan.show();
 
         } else{
 
-            Toast peringatan =Toast.makeText(this, "Disini aja makanya",Toast.LENGTH_LONG);
+            Toast peringatan =Toast.makeText(this, "Disini aja makan malamnya",Toast.LENGTH_LONG);
             peringatan.show();
 
         }
